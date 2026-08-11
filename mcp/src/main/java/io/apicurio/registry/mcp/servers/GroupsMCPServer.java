@@ -68,7 +68,8 @@ public class GroupsMCPServer {
     }
 
     @Tool(description = """
-            Update group metadata in the Apicurio Registry server.""")
+            Get information (metadata) about an existing group in Apicurio Registry. \
+            If the group does not exist, an error is returned.""")
     GroupMetaData get_group_metadata(
             @ToolArg(description = GROUP_ID) String groupId
     ) {
